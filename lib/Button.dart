@@ -25,6 +25,13 @@ class ButtonPageState extends State<ButtonPage> {
           )
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: (){
+          print('FloatingActionButton');
+        },
+      ),
+//      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,//位置居中
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[

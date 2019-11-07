@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart' ;
+import 'package:flutter/material.dart';
 import 'tabs/Home.dart';
 import 'tabs/Category.dart';
 import 'tabs/Setting.dart';
@@ -42,6 +42,24 @@ class _TabState extends State<Tabs> {
         ),
       ),
       body: this._pageList[this._currentIndex],
+      floatingActionButton: Container(
+        width: 60,
+        height: 60,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(40), color: Colors.white),
+        margin: EdgeInsets.only(top: 10),
+        padding: EdgeInsets.all(8),
+        child: FloatingActionButton(
+          child: Icon(Icons.add),
+          backgroundColor: this._currentIndex == 1 ? Colors.blue : Colors.yellow,
+          onPressed: () {
+            setState(() {
+              this._currentIndex = 1;
+            });
+          },
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: this._currentIndex,
         //配置对应的索引值
@@ -119,10 +137,10 @@ class _TabState extends State<Tabs> {
                 child: Icon(Icons.people),
               ),
               title: Text('用户中心'),
-              onTap: (){
-              Navigator.of(context).pop();//隐藏侧边栏
-              Navigator.pushNamed(context, '/user');
-            },
+              onTap: () {
+                Navigator.of(context).pop(); //隐藏侧边栏
+                Navigator.pushNamed(context, '/user');
+              },
             ),
             Divider(),
             ListTile(
