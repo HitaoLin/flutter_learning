@@ -10,6 +10,7 @@ import '../pages/Product.dart';
 import '../pages/ProductInfo.dart';
 import '../AppBarDemo.dart';
 import '../TabBarController.dart';
+import '../User.dart';
 
 //配置路由
 final routes = {
@@ -25,6 +26,7 @@ final routes = {
   '/registerThird': (context) => RegisterThirdPage(),
   '/appbar': (context) => AppBarDemoPage(),
   '/tabBarController': (context) => TabBarControllerPage(),
+  '/user': (context) => UserPage(),
 };
 
 //固定写法
