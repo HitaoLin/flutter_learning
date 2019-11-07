@@ -16,13 +16,19 @@ class _CategoryPageState extends State<CategoryPage> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          automaticallyImplyLeading: false,//没有返回按钮
           title:TabBar(
             tabs: <Widget>[
               Tab(text: "热门",),
               Tab(text: "推荐",),
             ],
           ) ,
-//          bottom: ,
+//          bottom: TabBar(
+//            tabs: <Widget>[
+//              Tab(text: "热门",),
+//              Tab(text: "推荐",),
+//            ],
+//          ) ,
         ),
         body: TabBarView(
           children: <Widget>[

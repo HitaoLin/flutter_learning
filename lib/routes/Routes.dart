@@ -11,6 +11,7 @@ import '../pages/ProductInfo.dart';
 import '../AppBarDemo.dart';
 import '../TabBarController.dart';
 import '../User.dart';
+import '../Button.dart';
 
 //配置路由
 final routes = {
@@ -27,6 +28,7 @@ final routes = {
   '/appbar': (context) => AppBarDemoPage(),
   '/tabBarController': (context) => TabBarControllerPage(),
   '/user': (context) => UserPage(),
+  '/button': (context) => ButtonPage(),
 };
 
 //固定写法

@@ -120,9 +120,9 @@ class _TabState extends State<Tabs> {
               ),
               title: Text('用户中心'),
               onTap: (){
-                Navigator.of(context).pop();//隐藏侧边栏
-                Navigator.pushNamed(context, '/user');
-              },
+              Navigator.of(context).pop();//隐藏侧边栏
+              Navigator.pushNamed(context, '/user');
+            },
             ),
             Divider(),
             ListTile(
