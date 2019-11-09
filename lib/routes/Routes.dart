@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_helloworld/form/Forms.dart';
+import 'package:flutter_helloworld/form/Forms.dart' as prefix0;
 import '../pages/user/RegisterSecond.dart';
 import '../pages/user/Login.dart';
 import '../pages/user/RegisterFirst.dart';
@@ -12,6 +14,12 @@ import '../AppBarDemo.dart';
 import '../TabBarController.dart';
 import '../User.dart';
 import '../Button.dart';
+import '../form/Forms.dart';
+import '../form/TextField.dart';
+import '../form/CheckBox.dart';
+import '../form/Radio.dart';
+import '../form/FormDemo.dart';
+import '../form/TextFieldAssignment.dart';
 
 //配置路由
 final routes = {
@@ -29,6 +37,12 @@ final routes = {
   '/tabBarController': (context) => TabBarControllerPage(),
   '/user': (context) => UserPage(),
   '/button': (context) => ButtonPage(),
+  '/forms': (context) => FormsPage(),
+  '/textField': (context) => TextFieldPage(),
+  '/checkBox': (context) => CheckBoxPage(),
+  '/radio': (context) => RadioPage(),
+  '/formDemo': (context) => FormDemoPage(),
+  '/textFieldAssignment': (context) => TextFiledAssignmentPage(),
 };
 
 //固定写法
