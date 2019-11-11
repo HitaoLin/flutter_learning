@@ -16,76 +16,97 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return SingleChildScrollView(
-      child: Center(
-        child: Column(
-          children: <Widget>[
-            RaisedButton(
-              color: Colors.blue,
-              textColor: Colors.white,
-              child: Text('跳转到搜索页面'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/search',arguments: {'id':'Search'});
+      child: Container(
+        child: Padding(
+          padding: EdgeInsets.all(20),
+          child:Wrap(
+            children: <Widget>[
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('跳转到搜索页面'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/search',arguments: {'id':'Search'});
 //              Navigator.pushNamed(context, '/search');
-              },
-            ),
-            RaisedButton(
-              color: Colors.blue,
-              textColor: Colors.white,
-              child: Text('跳转到表单页面并传值页面'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/from');
-              },
-            ),
-            RaisedButton(
-              color: Colors.blue,
-              textColor: Colors.white,
-              child: Text('跳转到商品页面'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/product');
-              },
-            ),
-            RaisedButton(
-              color: Colors.blue,
-              textColor: Colors.white,
-              child: Text('跳转到AppBarDemo'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/appbar');
-              },
-            ),
-            RaisedButton(
-              color: Colors.blue,
-              textColor: Colors.white,
-              child: Text('跳转到TabBarController'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/tabBarController');
-              },
-            ),
-            RaisedButton(
-              color: Colors.blue,
-              textColor: Colors.white,
-              child: Text('跳转到按钮页面'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/button');
-              },
-            ),
-            RaisedButton(
-              color: Colors.blue,
-              textColor: Colors.white,
-              child: Text('跳转到表单页面'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/forms');
-              },
-            ),
-            RaisedButton(
-              color: Colors.blue,
-              textColor: Colors.white,
-              child: Text('学员登记系统'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/formDemo');
-              },
-            ),
-          ],
-        ),
+                },
+              ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('跳转到表单页面并传值页面'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/from');
+                },
+              ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('跳转到商品页面'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/product');
+                },
+              ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('跳转到AppBarDemo'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/appbar');
+                },
+              ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('跳转到TabBarController'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/tabBarController');
+                },
+              ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('跳转到按钮页面'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/button');
+                },
+              ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('跳转到表单页面'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/forms');
+                },
+              ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('学员登记系统'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/formDemo');
+                },
+              ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('日期组件'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/dateTime');
+                },
+              ),
+              SizedBox(width: 20,),
+            ],
+          ), 
+        )
+        
       ),
     );
   }

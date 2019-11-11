@@ -20,6 +20,7 @@ import '../form/CheckBox.dart';
 import '../form/Radio.dart';
 import '../form/FormDemo.dart';
 import '../form/TextFieldAssignment.dart';
+import '../date/DateTime.dart';
 
 //配置路由
 final routes = {
@@ -43,6 +44,7 @@ final routes = {
   '/radio': (context) => RadioPage(),
   '/formDemo': (context) => FormDemoPage(),
   '/textFieldAssignment': (context) => TextFiledAssignmentPage(),
+  '/dateTime': (context) => DateTimePage(),
 };
 
 //固定写法
