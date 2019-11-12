@@ -31,6 +31,14 @@ class _SettingPageState extends State<SettingPage> {
               Navigator.pushNamed(context, '/registerfirst');
             },
           ),
+          RaisedButton(
+            color: Colors.blue,
+            textColor: Colors.white,
+            child: Text("跳转到Demo"),
+            onPressed: () {
+              Navigator.pushNamed(context, '/demo');
+            },
+          ),
         ],
       ),
     );

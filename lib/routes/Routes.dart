@@ -22,6 +22,9 @@ import '../form/TextFieldAssignment.dart';
 import '../date/DateTime.dart';
 import '../date/DatePicker.dart';
 import '../date/DatePickerPub.dart';
+import '../demo/Demo.dart';
+import '../demo/GestureDetector.dart';
+import '../demo/Dismissible.dart';
 
 //配置路由
 final routes = {
@@ -48,6 +51,9 @@ final routes = {
   '/dateTime': (context) => DateTimePage(),
   '/datePicker': (context) => DatePickerPage(),
   '/datePickerPub': (context) => DatePickerPubPage(),
+  '/demo': (context) => DemoPage(),
+  '/gestureDetector': (context) => GestureDetectorPage(),
+  '/dismissible': (context) => DismissiblePage(),
 };
 
 //固定写法
