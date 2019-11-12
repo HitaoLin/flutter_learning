@@ -103,6 +103,15 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('轮播图组件'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/swiper');
+                },
+              ),
+              SizedBox(width: 20,),
             ],
           ), 
         )

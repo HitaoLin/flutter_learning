@@ -26,6 +26,7 @@ import '../demo/Demo.dart';
 import '../demo/GestureDetector.dart';
 import '../demo/Dismissible.dart';
 import '../demo/Fonts.dart';
+import '../Swiper.dart';
 
 //配置路由
 final routes = {
@@ -56,6 +57,7 @@ final routes = {
   '/gestureDetector': (context) => GestureDetectorPage(),
   '/dismissible': (context) => DismissiblePage(),
   '/fonts': (context) => FontsPage(),
+  '/swiper': (context) => SwiperPage(),
 };
 
 //固定写法

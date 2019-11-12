@@ -29,6 +29,8 @@ dependencies:
   date_format: ^1.0.8
   #第三方日期组件
   flutter_cupertino_date_picker: ^1.0.12
+  #轮播图组件
+  flutter_swiper : ^1.1.6
 
 dev_dependencies:
   flutter_test:
