@@ -40,6 +40,15 @@ class DemoPageState extends State<DemoPage> {
                   Navigator.pushNamed(context, '/dismissible');
                 },
               ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text("自定义字体"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/fonts');
+                },
+              ),
             ],
           ),
         ));

@@ -25,6 +25,7 @@ import '../date/DatePickerPub.dart';
 import '../demo/Demo.dart';
 import '../demo/GestureDetector.dart';
 import '../demo/Dismissible.dart';
+import '../demo/Fonts.dart';
 
 //配置路由
 final routes = {
@@ -54,6 +55,7 @@ final routes = {
   '/demo': (context) => DemoPage(),
   '/gestureDetector': (context) => GestureDetectorPage(),
   '/dismissible': (context) => DismissiblePage(),
+  '/fonts': (context) => FontsPage(),
 };
 
 //固定写法
