@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_helloworld/form/Forms.dart';
-import 'package:flutter_helloworld/form/Forms.dart' as prefix0;
 import '../pages/user/RegisterSecond.dart';
 import '../pages/user/Login.dart';
 import '../pages/user/RegisterFirst.dart';
@@ -21,6 +20,8 @@ import '../form/Radio.dart';
 import '../form/FormDemo.dart';
 import '../form/TextFieldAssignment.dart';
 import '../date/DateTime.dart';
+import '../date/DatePicker.dart';
+import '../date/DatePickerPub.dart';
 
 //配置路由
 final routes = {
@@ -45,6 +46,8 @@ final routes = {
   '/formDemo': (context) => FormDemoPage(),
   '/textFieldAssignment': (context) => TextFiledAssignmentPage(),
   '/dateTime': (context) => DateTimePage(),
+  '/datePicker': (context) => DatePickerPage(),
+  '/datePickerPub': (context) => DatePickerPubPage(),
 };
 
 //固定写法

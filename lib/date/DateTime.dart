@@ -38,6 +38,30 @@ class DateTimePageState extends State<DateTimePage> {
               Text(formatDate(DateTime(2019, 11, 09), [yy, '-', M, '-', d])),
               Text(formatDate(DateTime(2019, 11, 09,16, 59, 10), [HH, ':', nn, ':', ss])),
               Text(formatDate(DateTime(2019, 11, 09, 16, 59, 10), [HH, ':', nn, ':', ss, z])),
+              Center(
+                child: Row(
+                  children: <Widget>[
+                    RaisedButton(
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                      child: Text('跳转到日期页面'),
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/datePicker');
+//              Navigator.pushNamed(context, '/search');
+                      },
+                    ),
+                    SizedBox(width: 20,),
+                    RaisedButton(
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                      child: Text('第三方日期插件的使用'),
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/datePickerPub');
+                      },
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
