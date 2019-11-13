@@ -1,7 +1,6 @@
 import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
 
-
 class DatePickerPage extends StatefulWidget {
   DatePickerPage({Key key}) : super(key: key);
 
@@ -16,7 +15,11 @@ class DatePickerPageState extends State<DatePickerPage> {
   var now = DateTime.now();
 
   DateTime _nowDate = DateTime.now();
-  var _nowTime = TimeOfDay(hour: 12, minute: 10);
+
+//  var _nowTime = TimeOfDay(hour: 12, minute: 10);
+
+  var _nowTime =
+      TimeOfDay(hour: DateTime.now().hour, minute: DateTime.now().minute);
 
 //  _showDatePicker(){
 //
@@ -33,17 +36,20 @@ class DatePickerPageState extends State<DatePickerPage> {
 
   _showDatePicker() async {
     var result = await showDatePicker(
-        context: context,
-        initialDate: _nowDate,
-        firstDate: DateTime(1980),
-        lastDate: DateTime(2100),
-
+      context: context,
+      initialDate: _nowDate,
+      firstDate: DateTime(1980),
+      lastDate: DateTime(2100),
     );
 
     print(result);
 
     setState(() {
-      this._nowDate = result;
+      if (result != null) {
+        this._nowDate = result;
+      } else {
+        return;
+      }
     });
   }
 
@@ -51,7 +57,11 @@ class DatePickerPageState extends State<DatePickerPage> {
     var result = await showTimePicker(context: context, initialTime: _nowTime);
 
     setState(() {
-      this._nowTime = result;
+      if (result != null) {
+        this._nowTime = result;
+      } else {
+        return;
+      }
     });
     print(_nowTime);
   }
@@ -93,14 +103,20 @@ class DatePickerPageState extends State<DatePickerPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
 //                Text('2019-11-11'),
-                    Text(
-                        '${formatDate(_nowDate == null ? DateTime.now() : _nowDate, [
-                      yyyy,
-                      '年',
-                      mm,
-                      '月',
-                      dd
-                    ])}'),
+                    /**
+                     * problem 1：
+                     * 这样进行判空，无法解决点击没反应的问题
+                     *  Text('${formatDate(_nowDate != null ? _nowDate : DateTime.now(), [yyyy, '年', mm, '月', dd])}'),
+                     *  只能
+                     *   setState(() {
+                        if(result != null){
+                        this._nowDate = result;
+                        }else{
+                        return;
+                        }
+                        });
+                     */
+                    Text('${formatDate(_nowDate, [yyyy, '年', mm, '月', dd])}'),
                     Icon(Icons.arrow_drop_down)
                   ],
                 ),
@@ -114,6 +130,11 @@ class DatePickerPageState extends State<DatePickerPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
 //                Text('2019-11-11'),
+                    /**
+                     * problem 2：
+                     * Text(_nowTime == null? (TimeOfDay(hour: DateTime.now().hour, minute: DateTime.now().minute)).format(context) : _nowTime.format(context)),
+                     * 同理：problem 1
+                     */
                     Text(_nowTime.format(context)),
                     Icon(Icons.arrow_drop_down)
                   ],

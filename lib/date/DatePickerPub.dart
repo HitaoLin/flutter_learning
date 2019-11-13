@@ -36,11 +36,14 @@ class DatePickerPubPageState extends State<DatePickerPubPage>{
 
       locale: DateTimePickerLocale.zh_cn,
       onClose: () => print("----- onClose -----"),
-      onCancel: () => print('onCancel'),
+      onCancel: () {
+        print('onCancel');
+      },
       onChange: (dateTime, List<int> index) {
-        setState(() {
-          _dateTime = dateTime;
-        });
+        //不改变修改时间，这样取消才是原来的时间
+//        setState(() {
+//          _dateTime = dateTime;
+//        });
       },
       onConfirm: (dateTime, List<int> index) {
         setState(() {
