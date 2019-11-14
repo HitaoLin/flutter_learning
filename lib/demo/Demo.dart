@@ -49,6 +49,15 @@ class DemoPageState extends State<DemoPage> {
                   Navigator.pushNamed(context, '/fonts');
                 },
               ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text("动画"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/animation');
+                },
+              ),
             ],
           ),
         ));

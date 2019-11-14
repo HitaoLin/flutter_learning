@@ -28,6 +28,9 @@ import '../demo/Dismissible.dart';
 import '../demo/Fonts.dart';
 import '../Swiper.dart';
 import '../Dialog.dart';
+import '../demo/animation/Animation.dart';
+import '../demo/animation/AnimatedOpacity.dart';
+import '../demo/animation/Hero.dart';
 
 //配置路由
 final routes = {
@@ -60,6 +63,9 @@ final routes = {
   '/fonts': (context) => FontsPage(),
   '/swiper': (context) => SwiperPage(),
   '/dialog': (context) => DialogPage(),
+  '/animation': (context) => AnimationPage(),
+  '/animatedOpacity': (context) => AnimatedOpacityPage(),
+  '/hero': (context) => HeroPage(),
 };
 
 //固定写法
