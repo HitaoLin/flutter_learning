@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'components/MyDialog.dart';
 
 class DialogPage extends StatefulWidget {
   DialogPage({Key key}) : super(key: key);
@@ -174,6 +175,20 @@ class DialogPageState extends State<DialogPage> {
               textColor: Colors.white,
               child: Text('toast-fluttertoast第三方库'),
               onPressed: _toast,
+            ),
+            SizedBox(
+              width: 20,
+            ),
+            RaisedButton(
+              color: Colors.blue,
+              textColor: Colors.white,
+              child: Text('自定义Dialog'),
+              onPressed: (){
+                showDialog(context: context,
+                builder:(context){
+                  return MyDialog(title: "关于我们",content: "我是内容11",);
+                });
+              },
             ),
             SizedBox(
               width: 20,
