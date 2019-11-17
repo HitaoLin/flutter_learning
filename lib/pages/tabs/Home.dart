@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -11,6 +13,32 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   String title;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+//    Map userInfo = {
+//      "username":"张三",
+//      "age":20
+//    };
+//
+//    var a = json.encode(userInfo);//把Map类型数据转换成json字符串
+//    print(a);
+//    print(userInfo is Map);
+//    print(a is String);
+
+
+
+//  String userinfo='{"username":"zhangsan","age":20}';
+//
+//  Map u = json.decode(userinfo);//把json字符串转换成Map类型
+//
+//  print(u["age"]);
+
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -118,6 +146,15 @@ class _HomePageState extends State<HomePage> {
                 child: Text('Dialog'),
                 onPressed: () {
                   Navigator.pushNamed(context, '/dialog');
+                },
+              ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('Http get/post'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/http');
                 },
               ),
               SizedBox(width: 20,),
