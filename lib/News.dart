@@ -1,27 +1,31 @@
 import 'package:flutter/material.dart';
 
-class HttpBacPage extends StatefulWidget{
+class NewsPage extends StatefulWidget{
 
-  HttpBacPage({Key key}):super(key : key);
+  NewsPage({Key key}):super(key:key);
 
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return HttpBacPageState();
+    return NewsPageState();
   }
 
 }
 
-class HttpBacPageState extends State<HttpBacPage>{
+class NewsPageState extends State<NewsPage>{
+
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('HttpBac'),
+        title: Text('新闻列表'),
         centerTitle: true,
       ),
-      body: Text('HttpBac'),
+      body:Text('新闻列表'),
     );
   }
+
+
 }

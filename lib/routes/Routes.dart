@@ -32,8 +32,9 @@ import '../demo/animation/Animation.dart';
 import '../demo/animation/AnimatedOpacity.dart';
 import '../demo/animation/Hero.dart';
 import '../http/Http.dart';
-import '../http/Http_Bac.dart';
+import '../http/DioDemo.dart';
 import '../http/GetDate.dart';
+import '../News.dart';
 
 //配置路由
 final routes = {
@@ -70,8 +71,9 @@ final routes = {
   '/animatedOpacity': (context) => AnimatedOpacityPage(),
   '/hero': (context) => HeroPage(),
   '/http': (context) => HttpPage(),
-  '/httpBac': (context) => HttpBacPage(),
+  '/dioDemo': (context) => DioDemoPage(),
   '/getData': (context) => GetDataPage(),
+  '/news': (context) => NewsPage(),
 
 };
 
