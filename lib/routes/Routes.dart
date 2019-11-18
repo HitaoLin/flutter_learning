@@ -34,7 +34,8 @@ import '../demo/animation/Hero.dart';
 import '../http/Http.dart';
 import '../http/DioDemo.dart';
 import '../http/GetDate.dart';
-import '../News.dart';
+import '../news/News.dart';
+import '../news/NewsContent.dart';
 
 //配置路由
 final routes = {
@@ -74,6 +75,7 @@ final routes = {
   '/dioDemo': (context) => DioDemoPage(),
   '/getData': (context) => GetDataPage(),
   '/news': (context) => NewsPage(),
+  '/newsContent': (context, {arguments}) => NewsContentPage(arguments: arguments),
 
 };
 

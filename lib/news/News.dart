@@ -91,6 +91,11 @@ class NewsPageState extends State<NewsPage> {
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                             ),
+                            onTap: (){
+                              Navigator.pushNamed(context, '/newsContent',arguments: {
+                                'aid':this.list[index]['aid'],
+                              });
+                            },
                           ),
                           Divider(),
                           _getMoreWidget(),
@@ -105,6 +110,11 @@ class NewsPageState extends State<NewsPage> {
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                             ),
+                            onTap: (){
+                              Navigator.pushNamed(context, '/newsContent',arguments: {
+                                'aid':this.list[index]['aid'],
+                              });
+                            },
                           ),
                           Divider(),
                         ],
@@ -145,3 +155,4 @@ class NewsPageState extends State<NewsPage> {
   }
 
 }
+

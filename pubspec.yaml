@@ -36,6 +36,7 @@ dependencies:
   #网络请求
   http: ^0.12.0+2
   dio: ^2.1.16
+  flutter_html: ^0.11.0
 
 
 dev_dependencies:
