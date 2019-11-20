@@ -36,6 +36,7 @@ import '../http/DioDemo.dart';
 import '../http/GetDate.dart';
 import '../news/News.dart';
 import '../news/NewsContent.dart';
+import '../news/NewsContentWeb.dart';
 
 //配置路由
 final routes = {
@@ -76,6 +77,7 @@ final routes = {
   '/getData': (context) => GetDataPage(),
   '/news': (context) => NewsPage(),
   '/newsContent': (context, {arguments}) => NewsContentPage(arguments: arguments),
+  '/newsContentWeb': (context, {arguments}) => NewsContentWebPage(arguments: arguments),
 
 };
 
