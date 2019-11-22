@@ -45,6 +45,8 @@ dependencies:
   amap_location: ^0.2.0
   #定位权限管理
   location_permissions: ^2.0.3
+  #相机拍照和相册选择
+  image_picker: ^0.6.2+1
 
 
 dev_dependencies:

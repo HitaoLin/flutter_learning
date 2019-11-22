@@ -39,6 +39,7 @@ import '../news/NewsContent.dart';
 import '../news/NewsContentWeb.dart';
 import '../Device.dart';
 import '../Location.dart';
+import '../ImagePicker.dart';
 
 //配置路由
 final routes = {
@@ -82,6 +83,7 @@ final routes = {
   '/newsContentWeb': (context, {arguments}) => NewsContentWebPage(arguments: arguments),
   '/device': (context) => DevicePage(),
   '/location': (context) => LocationPage(),
+  '/imagePicker': (context) => ImagePickerPage(),
 
 };
 
