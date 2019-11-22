@@ -37,6 +37,8 @@ import '../http/GetDate.dart';
 import '../news/News.dart';
 import '../news/NewsContent.dart';
 import '../news/NewsContentWeb.dart';
+import '../Device.dart';
+import '../Location.dart';
 
 //配置路由
 final routes = {
@@ -78,6 +80,8 @@ final routes = {
   '/news': (context) => NewsPage(),
   '/newsContent': (context, {arguments}) => NewsContentPage(arguments: arguments),
   '/newsContentWeb': (context, {arguments}) => NewsContentWebPage(arguments: arguments),
+  '/device': (context) => DevicePage(),
+  '/location': (context) => LocationPage(),
 
 };
 

@@ -39,6 +39,12 @@ dependencies:
   flutter_html: ^0.11.0
   #web
   flutter_inappbrowser: ^1.2.1
+  #获取设备信息
+  device_info: ^0.4.1+1
+  #高德地图
+  amap_location: ^0.2.0
+  #定位权限管理
+  location_permissions: ^2.0.3
 
 
 dev_dependencies:

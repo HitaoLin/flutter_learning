@@ -167,6 +167,24 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('Device或者设备信息'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/device');
+                },
+              ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('Location获取地理定位'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/location');
+                },
+              ),
+              SizedBox(width: 20,),
             ],
           ), 
         )
