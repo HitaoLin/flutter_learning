@@ -40,6 +40,8 @@ import '../news/NewsContentWeb.dart';
 import '../Device.dart';
 import '../Location.dart';
 import '../ImagePicker.dart';
+import '../VideoPlayer.dart';
+import '../Connectivity.dart';
 
 //配置路由
 final routes = {
@@ -79,12 +81,15 @@ final routes = {
   '/dioDemo': (context) => DioDemoPage(),
   '/getData': (context) => GetDataPage(),
   '/news': (context) => NewsPage(),
-  '/newsContent': (context, {arguments}) => NewsContentPage(arguments: arguments),
-  '/newsContentWeb': (context, {arguments}) => NewsContentWebPage(arguments: arguments),
+  '/newsContent': (context, {arguments}) =>
+      NewsContentPage(arguments: arguments),
+  '/newsContentWeb': (context, {arguments}) =>
+      NewsContentWebPage(arguments: arguments),
   '/device': (context) => DevicePage(),
   '/location': (context) => LocationPage(),
   '/imagePicker': (context) => ImagePickerPage(),
-
+//  '/video': (context) => VideoPlayerPage(),
+  '/network': (context) => ConnectivityPage(),
 };
 
 //固定写法

@@ -203,6 +203,24 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('chewie+videoPlayer视频播放'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/video');
+                },
+              ),
+              SizedBox(width: 20,),
+              RaisedButton(
+                color: Colors.blue,
+                textColor: Colors.white,
+                child: Text('网络'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/network');
+                },
+              ),
+              SizedBox(width: 20,),
             ],
           ), 
         )
