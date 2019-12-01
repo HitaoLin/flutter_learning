@@ -42,6 +42,8 @@ import '../Location.dart';
 import '../ImagePicker.dart';
 import '../VideoPlayer.dart';
 import '../Connectivity.dart';
+import '../pages/SharePreference.dart';
+import '../pages/SPGetData.dart';
 
 //配置路由
 final routes = {
@@ -90,6 +92,8 @@ final routes = {
   '/imagePicker': (context) => ImagePickerPage(),
 //  '/video': (context) => VideoPlayerPage(),
   '/network': (context) => ConnectivityPage(),
+  '/sharePreference': (context) => SharePreferencePage(),
+  '/getSPData': (context) => SPGetDataPage(),
 };
 
 //固定写法
